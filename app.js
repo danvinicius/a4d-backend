@@ -7,6 +7,9 @@ const userRouter = require("./routes/User");
 require("./database/connection");
 
 app.use(cors());
+app.get("/", (req, res) => {
+  res.send("Olá mundo");
+});
 
 // parse application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: false }));
@@ -14,7 +17,4 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.use("/user", userRouter);
-let PORT = 8081;
-app.listen(PORT, () => {
-  console.log("Servidor rodando na porta ", PORT);
-});
+app.listen(process.env.PORT || 8081);
