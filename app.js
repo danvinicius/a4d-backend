@@ -7,9 +7,6 @@ const userRouter = require("./routes/User");
 require("./database/connection");
 
 app.use(cors());
-app.get("/", (req, res) => {
-  res.send("Olá mundo");
-});
 
 // parse application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: false }));
