@@ -191,11 +191,10 @@ module.exports = {
               from: `${process.env.NOME} <${process.env.EMAIL}>`,
               to: user.email,
               subject: "Recuperação de senha",
-              html: `<h1>Olá ${
+              html: `<h2>Olá ${
                 user.name.split(" ")[0]
-              }, recupere sua senha aqui</h1> 
+              }, seu código de recuperação de senha é: </h2> 
               <br/> 
-              <h2>Seu código de recuperação de senha é: </h2>
               <h3>${user.recoverCode}</h3>`,
             });
             res.status(200).json({
