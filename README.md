@@ -15,7 +15,7 @@ API feita em NodeJS/ExpressJs, utilizando MongoDB e consumida via Axios pelo web
 <h4> 
 	🚧 A4D API 🚀 Em construção... 🚧
 </h4>
-<br/><br/>
+<br/>
 
 ## Documentação
 ### Endpoints do controller de usuários
